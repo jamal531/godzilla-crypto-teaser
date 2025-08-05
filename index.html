@@ -3,49 +3,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content='width=device-width, initial-scale=1.0' />
   <title>Godzilla Crypto Predictor</title>
   <style>
     body {
-      background-color: #0f0f0f;
-      color: #e0e0e0;
       font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #222;
       text-align: center;
-      padding: 50px 20px;
+      padding: 30px;
     }
     h1 {
-      color: #00ffcc;
-      font-size: 3em;
-      margin-bottom: 0.2em;
+      color: #007bff;
     }
-    p {
-      font-size: 1.3em;
-      color: #aaa;
+    .section {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
     }
-    .soon {
+    .metrics, .predictions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 10px;
+      width: 200px;
+      background: #fafafa;
+    }
+    .long {
+      color: green;
+      font-weight: bold;
+    }
+    .short {
+      color: red;
+      font-weight: bold;
+    }
+    footer {
       margin-top: 50px;
-      font-size: 2em;
-      color: #ffcc00;
-      animation: blink 1.5s infinite;
-    }
-    @keyframes blink {
-      0% { opacity: 1; }
-      50% { opacity: 0.4; }
-      100% { opacity: 1; }
-    }
-    .footer {
-      margin-top: 80px;
       font-size: 0.9em;
-      color: #666;
+      color: #999;
     }
   </style>
 </head>
 <body>
   <h1>🚀 Godzilla Crypto Predictor</h1>
-  <p>AI + Algorithmic Buy/Sell Signals for BTC, ETH, BNB, DOGE, SOL</p>
-  <p>Bitnode-style Network Metrics Coming Soon</p>
-  <div class="soon">⚙️ Tool Launching... Stay Tuned!</div>
-  <div class="footer">Phase 1 Preview • Waqar Zaka–style tools in Phase 2</div>
+
+  <div class="section">
+    <h2>📈 Buy/Sell Predictions</h2>
+    <div class="predictions">
+      <div class="card"><strong>BTC</strong><br>Go Long (88%)</div>
+      <div class="card"><strong>ETH</strong><br>Go Short (61%)</div>
+      <div class="card"><strong>BNB</strong><br>Go Long (72%)</div>
+      <div class="card"><strong>DOGE</strong><br>Go Long (91%)</div>
+      <div class="card"><strong>SOL</strong><br>Go Short (55%)</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>📊 BTC & ETH Network Metrics</h2>
+    <div class="metrics">
+      <div class="card"><strong>BTC Mempool:</strong><br>38 MB</div>
+      <div class="card"><strong>BTC Hashrate:</strong><br>420 EH/s</div>
+      <div class="card"><strong>BTC Active Addresses:</strong><br>925K</div>
+      <div class="card"><strong>ETH Gas Fees:</strong><br>38 Gwei</div>
+      <div class="card"><strong>ETH Active Addresses:</strong><br>895K</div>
+    </div>
+  </div>
+
+  <footer>
+    Auto-refresh every 1 min | Waqar Zaka–style | Light Theme | Phase 2 Preview
+  </footer>
 </body>
 </html>
+
 
